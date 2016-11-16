@@ -14,21 +14,14 @@
  * limitations under the License.
  */
 
-package com.recipe_app.client;
+package com.recipe_app.client.database;
 
-import android.app.Activity;
-import android.os.Bundle;
-
-import com.recipe_app.R;
-
-/**
- * This Activity class defines the home screen for the recipe app.
- */
-public class HomeActivity extends Activity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-    }
+public class RecipeNoteTable {
+    public static final String TABLE = "recipe_notes";
+    public static final String ID_COLUMN = "_id";
+    public static final String ID = TABLE + "." + ID_COLUMN;
+    public static final String RECIPE_ID_COLUMN ="recipe_id";
+    public static final String RECIPE_ID = TABLE + "." + RECIPE_ID_COLUMN;
+    public static final String TEXT_COLUMN = "text";
+    public static final String TEXT = TABLE + "." + TEXT_COLUMN;
 }
